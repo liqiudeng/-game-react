@@ -1,0 +1,12 @@
+.square {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  border: solid 1px black;
+  font-size: 40px;
+  line-height: 80px;
+}
+.square:hover {
+  border-color: #09d3ac;
+  color: #09d3ac;
+}
