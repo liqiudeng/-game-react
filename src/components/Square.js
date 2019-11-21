@@ -9,15 +9,25 @@ class Square extends Component {
     this.state = {};
   }
   getSquareTitle() {
-    const { info, pos } = this.props;
+    let { info, pos } = this.props;
     let title = pos;
     if (info) {
       title = info;
     }
     return title;
   }
+  handleClick = () => {
+    let { info, pos } = this.props;
+    if (this.props.onClick) {
+      this.props.onClick(pos, info);
+    }
+  };
   render() {
-    return <div className="square">{this.getSquareTitle()}</div>;
+    return (
+      <div className="square" onClick={this.handleClick}>
+        {this.getSquareTitle()}
+      </div>
+    );
   }
 }
 export default Square;
