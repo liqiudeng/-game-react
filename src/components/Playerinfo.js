@@ -7,9 +7,10 @@ class Playerinfo extends Component {
     const { curPlayer, winResult } = this.props;
     if (winResult.result) {
       return (
-        <div className="playerinfo"> player:{winResult.winPlayer} - win</div>
+        
+        <div className="playerinfo"> player: {winResult.winPlayer} - win</div>
       );
-    } else return <div className="playerinfo"> next player:{curPlayer}</div>;
+    } else return <div className="playerinfo"> next player: {curPlayer}</div>;
   }
 }
 export default Playerinfo;

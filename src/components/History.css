@@ -4,4 +4,9 @@
 .history ul li {
   list-style: none;
   margin-bottom: 5px;
+  font-size: 18px;
+}
+.history button {
+  border: solid 1px burlywood;
+  font-size: 28px;
 }

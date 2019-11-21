@@ -1,5 +1,8 @@
 .board {
+  /* color: blueviolet; */
+  position: relative;
 }
 
 .row {
+  border: 3px solid #737373;
 }

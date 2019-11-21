@@ -20,9 +20,9 @@ class History extends Component {
   genHistoryItem(item, index) {
     return (
       <li key={"history-item-${index}"}>
-        <button onClick={this.handleClick.bind(this, item)}>
+        <div classname="position" onClick={this.handleClick.bind(this, item)}>
           #{item.stepCount}: player{item.player} on position of {item.pos}
-        </button>
+        </div>
       </li>
     );
   }
